@@ -33,6 +33,16 @@ public class StandardHealth : MonoBehaviour, IHealth
             Die();
     }
 
+    public void Heal(int amount)
+    {
+        if (amount <= 0)
+            throw new ArgumentOutOfRangeException("Invalid Damage amount specified: " + amount);
+
+        currentHealth += amount;
+
+        OnHPPctChanged(CurrentHpPct);
+    }
+
     private void Die()
     {
         OnDied();
@@ -44,6 +54,10 @@ public class StandardHealth : MonoBehaviour, IHealth
         if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(startingHealth / 10);
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Heal(startingHealth / 10);
         }
     }
 }
