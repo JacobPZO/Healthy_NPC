@@ -37,9 +37,18 @@ public class NumberOfHitsHealth : MonoBehaviour, IHealth
             OnHPPctChanged(CurrentHpPct);
 
             if (hitsRemaining <= 0)
-                OnDied();
+                Die();
         }
     }
+
+    public void Heal(int amount)
+    {
+        
+         hitsRemaining++;
+
+         OnHPPctChanged(CurrentHpPct);
+    }
+
 
     private void Update()
     {
@@ -47,7 +56,18 @@ public class NumberOfHitsHealth : MonoBehaviour, IHealth
         {
             TakeDamage(1);
         }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Heal(1);
+        }
     }
+
+    private void Die()
+    {
+        OnDied();
+        GameObject.Destroy(this.gameObject);
+    }
+
 
     private IEnumerator InvunlerabilityTimer()
     {

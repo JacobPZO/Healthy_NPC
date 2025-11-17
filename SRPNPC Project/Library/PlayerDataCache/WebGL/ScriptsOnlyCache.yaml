@@ -5,8 +5,12 @@ ScriptsOnlyBuild:
     - NPC
     - NPCParticles
     - NumberOfHitsHealth
+    - StandardHealth
     Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -49,6 +53,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -60,25 +66,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 1500}
     - Class: 114
-      Script: {instanceID: 1802}
+      Script: {instanceID: 1578}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 1804}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 3184}
     - Class: 114
-      Script: {instanceID: 3262}
+      Script: {instanceID: 3264}
     - Class: 114
-      Script: {instanceID: 3476}
+      Script: {instanceID: 3304}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3480}
     - Class: 114
-      Script: {instanceID: 3854}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4204}
+      Script: {instanceID: 3858}
     - Class: 114
-      Script: {instanceID: 19938}
+      Script: {instanceID: 4060}
+    - Class: 114
+      Script: {instanceID: 4210}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -98,6 +106,12 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 7bcb35908a60cac26edee0ff51816ada
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: c1058004017c4d95e55a1c77d955e000
@@ -352,12 +366,6 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 7bcb35908a60cac26edee0ff51816ada
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
-  - hash:
-      serializedVersion: 2
       Hash: 03116c959005bf565efe4a31f8be265e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -416,6 +424,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: e1a1c44a3c9d28af5a6cb025f2ba3c65
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StandardHealth
   - hash:
       serializedVersion: 2
       Hash: 7219ebb0b4a64fd19236e423b34046f6
@@ -520,6 +534,12 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: 0310fb5fc32a7de20c9f80e23f41c2f6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NumberOfHitsHealth
+  - hash:
+      serializedVersion: 2
       Hash: 78fa8c70bef8c6d96ce76e6d539a1987
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -548,19 +568,7 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NPC
-  - hash:
-      serializedVersion: 2
-      Hash: e1a1c44a3c9d28af5a6cb025f2ba3c65
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: StandardHealth
-  - hash:
-      serializedVersion: 2
-      Hash: 0310fb5fc32a7de20c9f80e23f41c2f6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NumberOfHitsHealth
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/pisioj/Downloads/SRPNPC-main/SRPNPC-main/SRPNPC Project/Build
+  playerPath: C:/Users/pisioj/Documents/GitHub/Healthy_NPC/SRPNPC Project/the_build

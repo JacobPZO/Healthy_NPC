@@ -18,6 +18,11 @@ public class NPC : MonoBehaviour
         GetComponent<IHealth>().TakeDamage(amount);
     }
 
+    private void OnTriggerEnter(Collider collider)
+    {
+        TakeDamage(10);
+    }
+
     private void Update()
     {
         transform.position += transform.forward * moveSpeed * Time.deltaTime;
