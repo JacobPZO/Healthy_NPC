@@ -7,7 +7,10 @@ ScriptsOnlyBuild:
     - NumberOfHitsHealth
     - StandardHealth
     Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -568,4 +571,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/pisioj/Downloads/SRPNPC-main/SRPNPC-main/SRPNPC Project/the_build
+  playerPath: C:/Users/pisioj/Documents/GitHub/Healthy_NPC/SRPNPC Project/the_build
